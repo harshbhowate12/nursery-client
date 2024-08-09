@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import "./home.css"
 import PlantCard from '../../components/plantcard/plantcard'
 import axios from 'axios'
 import toast,{Toaster} from 'react-hot-toast'
+import AddImg from "./add.png"
+import { Link } from 'react-router-dom'
 
 function Home() {
     const [plants, setPlants]=useState([])
@@ -19,7 +22,7 @@ function Home() {
         loadPlants()
     },[])
   return (
-    <div>
+    <div className='platns-container'>
         <h1>Plants</h1>
         {
             plants.map((plant,i)=>{
@@ -42,6 +45,9 @@ function Home() {
                 )
             })
         }
+        <Link to="/add">
+            <img src={AddImg} className='add-img' alt='add'/>
+        </Link>
         <Toaster/>
     </div>
   )

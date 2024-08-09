@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './views/home/home';
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
+import AddPlant from './views/AddPlant/addplant';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,6 +11,10 @@ const router=createBrowserRouter([
   {
     path:"/",
     element:<Home/>
+  },
+  {
+    path:"/add",
+    element:<AddPlant/>
   },
   {
     path:"*",

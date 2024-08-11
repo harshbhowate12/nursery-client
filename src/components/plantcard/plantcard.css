@@ -5,9 +5,51 @@
 .plant-container{
     border: 2px solid black;
     padding: 15px 30px;
-    margin: 40px;
+    margin: 40px 100px;
     border-radius: 15px;
+    position: relative;
 }
 .plant-name{
     font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.price{
+    font-family: cursive;
+    font-size: 15px;
+    margin: 10px 0 10px 7px;
+}
+.edit-btn{
+    background-color: #08651e;
+    padding: 4px 15px;
+    font-size:13px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    font-family: cursive;
+}
+.edit-btn:hover{
+    padding: 5px 18px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.10);
+}
+.dlt-btn{
+    background-color: red;
+    padding: 4px 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: cursive;
+}
+.dlt-btn:hover{
+    padding: 5px 18px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.10);
+}
+.plant-img{
+    height: 100px;
+    width: 150px;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }

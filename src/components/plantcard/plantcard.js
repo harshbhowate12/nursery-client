@@ -14,8 +14,8 @@ function PlantCard({_id,name,price,image,description,loadPlants}) {
   }
   return (
     <div className='plant-container'>
-        <h1 className='palnt-name'>{name}</h1>
-        <p>{price}</p>       
+        <h1 className='plant-name'>{name}</h1>
+        <p className='price'>{`Price: ${price}`}</p>       
 
         <Link to={`/update/${_id}`} className='edit-btn'>Edit</Link>
         <button 
@@ -25,6 +25,7 @@ function PlantCard({_id,name,price,image,description,loadPlants}) {
            dltPlant(_id)
         }}
         >Delete</button>
+        <img src={image} alt='' className='plant-img'/>
         <Toaster/>
     </div>
   )

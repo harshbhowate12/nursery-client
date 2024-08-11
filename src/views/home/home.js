@@ -23,7 +23,8 @@ function Home() {
     },[])
   return (
     <div className='platns-container'>
-        <h1>Plants</h1>
+        <div className='heading'>This site is in the developing mode </div>
+        <h1 className='head2'>Plants Nursury</h1>
         {
             plants.map((plant,i)=>{
                 const{

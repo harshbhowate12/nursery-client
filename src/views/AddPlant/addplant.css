@@ -39,19 +39,4 @@
     display: inline-block;
     margin-left: auto;
 }
-.dlt-btn{
-    background-color: red;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 10px;
-    
-}
-.edit-btn{
-    background-color: #000;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 10px;
-}
+
